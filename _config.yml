@@ -30,6 +30,7 @@ github:
 
 twitter:
   username: brkalbyrk7 # change to your Twitter username
+  cards: true # enable Twitter summary cards
   
 social:
   # Change to your full name.
