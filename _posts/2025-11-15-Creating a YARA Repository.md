@@ -44,7 +44,7 @@ Modern malware often uses reflective loading to run payloads entirely in memory 
 Many analysts cannot create every rule on their own because the number of malware samples and detection needs is simply too large. As I mentioned at the beginning of this article, more than two hundred GitHub repositories contain public YARA rule collections, and together they include more than three hundred thousand rules. Even the best rule sets in the community have serious problems. Some of them slow down your scans because they are not optimized, and many of them increase your false positive rate. When we look at the most well known rule sets in the industry, we can see both their strengths and their limitations.
 
 
-1. [YARA Forge](http://yarahq.github.io/): **This is one of the best public sources you can find.** It combines rules using the YARA Forge tool created by [Florian](https://x.com/cyb3rops) and currently contains `11.418` rules. However, many recent stealer and ransomware families are still missing from the collection.
+1. [YARA Forge](https://yarahq.github.io/): **This is one of the best public sources you can find.** It combines rules using the YARA Forge tool created by [Florian](https://x.com/cyb3rops) and currently contains `11.418` rules. However, many recent stealer and ransomware families are still missing from the collection.
 2. [YARA-Rules](https://github.com/Yara-Rules/rules): This project was created `6` years ago by a community of more than 70 people, but it has not received any new rules in the last `3` years. It contains more than 10.000 rules, but many of them produce a high number of false positives and do not cover modern threats.
 3. [Valhalla](https://valhalla.nextron-systems.com/): Valhalla has more than `23.223` high quality rules, and many professional tools such as their `THOR APT Scanner` use this rule set internally. Only a small part of the rules, around `2.705`, are available for free. The rest of the rules are commercial, so you cannot use them freely for personal research.
 4. [YARAhub](https://yaraify.abuse.ch/yarahub/): This is a collection of rules submitted to YARAify with TLP:CLEAR classification. It contains `923` rules, but less than half of them can be viewed in detail. It is a great resource for hunting current threats, but the dataset is still too small to rely on alone.
@@ -658,7 +658,7 @@ python yara_scanner.py snake-golang/ed3c05bde9f0ea0f1321355b03ac42d0.bin
 
 - https://github.com/EgeBalci/deoptimizer
 
-- http://yarahq.github.io/
+- https://yarahq.github.io/
 
 - https://www.gendigital.com/blog/insights/research/yarang-reinventing-the-yara-scanner
 
