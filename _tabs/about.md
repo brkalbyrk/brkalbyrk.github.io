@@ -24,16 +24,15 @@ I am a Senior Threat Intelligence Analyst with experience in tracking advanced m
 - **[BOTCONF 2023](https://www.botconf.eu/botconf-presentation-or-article/ta-supply-chain-attack/) (Strasbourg)** – *TA551’s Supply Chain Attack*  
   Showed how TA551 attacked a global IT training and certification company.  
 
-- **[C4DT – EPFL](https://c4dt.epfl.ch/c4dt-conference-on-software-supply-chain-security/) (Switzerland)** – *TA551’s Supply Chain Attack*  
+- **[C4DT – EPFL 2023](https://c4dt.epfl.ch/c4dt-conference-on-software-supply-chain-security/) (Switzerland)** – *TA551’s Supply Chain Attack*  
   Gave a talk about TA551’s ongoing supply chain campaign.  
+
+- **[Global Initiative Podcast 2023](https://globalinitiative.net/analysis/conti-ransomware-group-cybercrime/) (London)** – *Deep Dive: Exploring Organized Crime*  
+  Talked about the rise and fall of the Conti ransomware group.  
 
 - **[BOTCONF 2022](https://www.botconf.eu/botconf-presentation-or-article/behind-the-scenes-of-qbot/) (Nantes)** – *Behind the Scenes of QBot*  
   Presented deep research on the QBot malware infrastructure.  
-
-- **[Global Initiative Podcast](https://globalinitiative.net/analysis/conti-ransomware-group-cybercrime/) (London)** – *Deep Dive: Exploring Organized Crime*  
-  Talked about the rise and fall of the Conti ransomware group.  
-
-
+  
 ## 🏆 Achievements
 
 - 🥈 **Locked Shields 2025 (NATO)** – 2nd place representing Türkiye (Malware & DFIR team)  

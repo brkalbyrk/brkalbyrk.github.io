@@ -16,10 +16,10 @@ timezone: Europe/Istanbul
 
 title: Berk 
 
-tagline: Threat Intelligence & Malware Analysis & Cybercrime
+tagline: Threat Intelligence & Malware Analysis & Cybercrime & Intelligence
 
 description: >-
-  Threat Intelligence & Malware Analysis & Cybercrime
+  Threat Intelligence & Malware Analysis & Cybercrime & Intelligence
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -35,7 +35,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Berk Albayrak
-  email: example@domain.com # change to your email address
+  email: contact-via-social-media # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/brkalbyrk7 # change to your Twitter homepage
