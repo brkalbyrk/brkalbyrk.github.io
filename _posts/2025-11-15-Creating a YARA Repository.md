@@ -192,7 +192,7 @@ rule test {
     #a > 1000
 }
 ```
-YARA evaluates conditions from left to right. In this example, the condition order causes performance problems because YARA first searches for all six strings in the file, then calculates the entropy of the resource section, and finally checks if the file is a PE file. The problem is that YARA does expensive operations before cheap ones. Checking `uint16(0) == 0x5a4d` (the PE magic bytes) is extremely fast because it only reads 2 bytes at the file start. Calculating entropy is much slower because it must process the entire resource section. Searching for all six strings is the slowest operation. If the file is not even a PE file, YARA wastes time searching for strings and calculating entropy before discovering the file does not match. A better approach would be:
+YARA evaluates conditions from left to right. In this example, the condition order causes performance problems because YARA first searches for all six strings in the file, then calculates the entropy of the resource section, and finally checks if the file is a PE file. The problem is that YARA does expensive operations before cheap ones. Checking `uint16(0) == 0x5a4d` (the PE magic bytes) is extremely fast because it only reads 2 bytes at the file start. Calculating entropy is much slower because it must process the entire resource section. Searching for all six strings is the slowest operation. If the file is not even a PE file, YARA wastes time searching for strings and calculating entropy before discovering the file does not match.
 
 **Incorrectly ordered conditions**
 
