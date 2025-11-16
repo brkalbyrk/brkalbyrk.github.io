@@ -4,6 +4,10 @@ author: Berk
 date: 2025-11-15 00:00:00 +0300
 categories: [Malware, YARA]
 tags: [yara,malware,yara-x]
+toc: true
+image:
+    path: /assets/img/yara_repository/regex2.png
+    alt: "Creating a YARA Repository"
 ---
 
 *In this article, I want to explain the real challenges you face when you try to build a YARA rule set for your own project or for your company. Today there are more than +300.000 YARA rules published across over +211 GitHub repositories. When you combine all of them and try to use them as one big rule set, the results are usually disappointing. The false positive and false negative rates are much higher than you expect, mainly because there is no common standard for writing YARA rules (!).*
@@ -11,10 +15,6 @@ tags: [yara,malware,yara-x]
 *There is also another practical problem. Have you ever tried to compile 300.000 rules into a single YARA file and then scan a file larger than 200 megabytes? If you try, you will immediately notice how slow and unstable the process becomes. At this point, you must make sure that your entire rule set is high quality, unique, and tested before you use it in real scans. Otherwise, a single scan can take more than thirty minutes.*
 
 *The YARA engine and the [Aho-Corasick](https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm) algorithm allow extremely fast string matching, but this speed does not help when the rules themselves are poorly written. Many rules on the internet contain weak conditions, unnecessary patterns, or mistakes made by analysts. Because of this, building a strong and reliable rule set requires careful cleaning, testing, and optimization.*
-
-# Table of Contents
-
-# TOC
 
 ## Part 1 - Why we need a YARA Repository?
 
@@ -37,7 +37,7 @@ So what creates this need for a large and reliable YARA rule repository?
 
 1. **The growing number of malware samples**: The number of malware families and variants increases every day. There is no universal system that can classify all malware correctly, detect all new versions, or extract every configuration automatically. Because of this, we rely on scanning tools like YARA and constantly updated signatures to identify the files we collect.
 2. **Packers and Obfuscators**: Every year, new packers and protection tools appear that encrypt, packs, or FUD malware to avoid detection. This makes static detection much harder. In many cases, we must write static unpackers to extract configurations. If static unpacking is too complex, we run the malware in an online sandbox (like [Threat.Zone](https://threat.zone/)) and scan the memory dump with YARA. If we want to control locally, we use local sandboxes and extract process dumps with tools such as [pe-sieve](https://github.com/hasherezade/pe-sieve) then scan those dumps again or directly scan memory with [THOR](https://www.nextron-systems.com/thor/). (Like [Amber](https://github.com/EgeBalci/amber), [Themida](https://www.oreans.com/Themida.php), [VMProtect](https://vmpsoft.com/) and [Deoptimizer](https://github.com/EgeBalci/deoptimizer)).
-3. **Memory Address Encryption**: Some malware now runs once, then sleeps until the next command or trigger signal. While sleeping, it encrypts its main malicious payload directly in memory. When needed, it decrypts and runs again, sometimes inside a new process. If we scan memory dumps with YARA during the encrypted state, the malicious part may not be visible and this causes false negatives.
+3. **Sleep Mask**: Some malware now runs once, then sleeps until the next command or trigger signal. While sleeping, it encrypts its main malicious payload directly in memory. When needed, it decrypts and runs again, sometimes inside a new process. If we scan memory dumps with YARA during the encrypted state, the malicious part may not be visible and this causes false negatives.
 4. **Position-independent (reflective) PE loaders and in-memory execution**: 
 Modern malware often uses reflective loading to run payloads entirely in memory without writing anything to disk. These loaders manually map portable executables in memory and resolve imports by themselves. Because no file is ever created, file based YARA rules cannot detect them. The payload exists only in RAM, so detection requires memory scanning, behavioural monitoring, or YARA rules designed specifically to catch reflective loaders and their in-memory artifacts.
 
