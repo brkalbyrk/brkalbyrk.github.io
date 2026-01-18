@@ -1,0 +1,101 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Berk</title>
+  <subtitle>Threat Intelligence &amp; Malware Analysis &amp; Cybercrime &amp; Intelligence</subtitle>
+  <updated>2026-01-18T18:38:08+03:00</updated>
+  <author>
+    <name>Berk Albayrak</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2026 Berk Albayrak </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>The Threat Intel &amp; Malware Analyst's Roadmap</title>
+    <link href="http://localhost:4000/posts/The-Threat-Intel-&amp;-Malware-Analyst's-Roadmap/" rel="alternate" type="text/html" title="The Threat Intel &amp;amp; Malware Analyst&amp;apos;s Roadmap" />
+    <published>2026-01-18T18:00:00+03:00</published>
+  
+    <updated>2026-01-18T18:00:00+03:00</updated>
+  
+    <id>http://localhost:4000/posts/The-Threat-Intel-&amp;-Malware-Analyst's-Roadmap/</id>
+    <content type="text/html" src="http://localhost:4000/posts/The-Threat-Intel-&amp;-Malware-Analyst's-Roadmap/" />
+    <author>
+      <name>Berk</name>
+    </author>
+
+  
+    
+    <category term="Malware" />
+    
+    <category term="ThreatIntel" />
+    
+    <category term="Roadmap" />
+    
+  
+
+  <summary>The Threat Intel &amp;amp; Malware Analyst’s Roadmap  I’ve been working in threat intelligence and malware analysis for 7 years, and people often ask me where to start. What should they learn? What skills do they need?  This is my answer. A structured path covering everything from basics to advanced techniques. If you’re a SOC analyst wanting to level up, a developer curious about the malicious sid...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Creating a YARA Repository</title>
+    <link href="http://localhost:4000/posts/Creating-a-YARA-Repository/" rel="alternate" type="text/html" title="Creating a YARA Repository" />
+    <published>2025-11-15T00:00:00+03:00</published>
+  
+    <updated>2025-11-16T19:22:03+03:00</updated>
+  
+    <id>http://localhost:4000/posts/Creating-a-YARA-Repository/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Creating-a-YARA-Repository/" />
+    <author>
+      <name>Berk</name>
+    </author>
+
+  
+    
+    <category term="Malware" />
+    
+    <category term="YARA" />
+    
+  
+
+  <summary>In this article, I want to explain the real challenges you face when you try to build a YARA rule set for your own project or for your company. Today there are more than +300.000 YARA rules published across over +211 GitHub repositories. When you combine all of them and try to use them as one big rule set, the results are usually disappointing. The false positive and false negative rates are mu...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Hello World!</title>
+    <link href="http://localhost:4000/posts/Hello/" rel="alternate" type="text/html" title="Hello World!" />
+    <published>2025-11-12T19:34:00+03:00</published>
+  
+    <updated>2025-11-16T18:16:51+03:00</updated>
+  
+    <id>http://localhost:4000/posts/Hello/</id>
+    <content type="text/html" src="http://localhost:4000/posts/Hello/" />
+    <author>
+      <name>Berk</name>
+    </author>
+
+  
+    
+    <category term="Hello" />
+    
+  
+
+  <summary>Hello!  After starting a new chapter in my life, I’m returning to something I last did six years ago. When I began my threat intelligence career in 2019, I had to delete my OSINT and SOCMINT blog posts. Since then, I haven’t shared anything publicly, but I’ve decided to start writing again. The main reason is that information sharing in the community has decreased significantly, and I miss the ...</summary>
+
+  </entry>
+
+</feed>
+
+
