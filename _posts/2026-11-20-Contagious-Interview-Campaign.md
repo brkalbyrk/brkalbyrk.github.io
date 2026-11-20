@@ -42,6 +42,7 @@ I found `AxonionTrading-Demo.zip` attached to GitHub releases under `GLXY-a0x` a
 | --- | --- |
 | Release ZIP (GLXY-a0x) | `hxxps://github[.]com/GLXY-a0x/axonion-trading-demo/releases/download/v1.0.1-alpha/AxonionTrading-Demo.zip` |
 | Release ZIP (axondev22) | `hxxps://github[.]com/axondev22/AxonionTrading-Demo/releases/download/v1.0.1-alpha/AxonionTrading-Demo.zip` |
+| Protonmail Address (axondev22) | `daniel.e.s22@proton.me>` |
 | macOS and Linux downloader | `hxxps://vercelscript[.]vercel[.]app/u/2fb2db57` |
 | Windows downloader | `hxxps://vercelscript[.]vercel[.]app/w/2fb2db57` |
 
